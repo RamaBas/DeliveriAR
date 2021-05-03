@@ -5,7 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { signIn } from './../pages/signIn';
+import { navbar } from '../components/navbar/navbar';
+import { LauchAccount } from '../pages/LauchAccount';
 
 function App() {
   return (
@@ -13,19 +14,9 @@ function App() {
       <div className="container">
         <h1>DeliveriAR</h1>
         <hr/>
-        <signIn/>
         <Switch>
-          <Route path="/home">
-            <h2>Welcome to Login</h2>
-          </Route>
-          <Route path="/contact">
-            <h2>Welcome to </h2>
-          </Route>
-          <Route path="/prueba">
-            <h2>Pruebaca</h2>
-          </Route>
           <Route path="/">
-            <signIn/>
+            <LauchAccount />
           </Route>
         </Switch>
       </div>

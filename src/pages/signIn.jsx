@@ -8,14 +8,22 @@ root:{
 }
 }));
 
-export const signIn = () => {
+export const SignIn = () => {
     
     const classes= UseStyles();
     return (
         <div className={classes.root}>
-            login! 
-            <Grid>
-                <h1>Hola!</h1>
+            <Grid 
+                container
+                direction="column"
+                alignItems="center"
+            >
+                <Grid item lg>
+                    bloque1
+                </Grid>
+                <Grid item lg>
+                    bloque2
+                </Grid>
             </Grid>
             
         </div>
