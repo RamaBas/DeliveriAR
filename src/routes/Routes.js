@@ -12,8 +12,6 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <h1>DeliveriAR</h1>
-        <hr/>
         <Switch>
           <Route path="/">
             <LauchAccount />

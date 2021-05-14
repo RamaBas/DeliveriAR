@@ -7,7 +7,12 @@ const UseStyles= makeStyles((theme:Theme) =>(
     createStyles({
         root:{
             flexGrow:1,
-            backgroundColor: '#7cccd3',
+            //backgroundColor: '#7cccd3',
+        },
+        header:{
+            fontSize: 24,
+            margin: theme.spacing(6),
+
         },
         button:{
             margin: theme.spacing(1),
@@ -25,11 +30,8 @@ export const LauchAccount = () => {
                 direction="column"
                 alignItems="center"
             >
-                <Grid item lg>
+                <Grid item lg className={classes.header}>
                     DeliveriAR
-                </Grid>
-                <Grid item lg>
-                    <img src={lauchIMG} width="700px" height="550px"/>
                 </Grid>
             
                 <Button variant="outlined" color="primary" size="large" fullWidth className={classes.button}>
